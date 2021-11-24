@@ -114,7 +114,7 @@ double PidControllerBase:: compute(double ref, double meas, ros::Time last_time)
   ros::Time t_now = ros::Time::now();
   ros::Duration dt = t_now - last_time;
   
-  double u, up, ui, ud, error;
+  double u, up, ui, ud, error, ui_old_;
   error = ref - meas;
  
   // proportional term
