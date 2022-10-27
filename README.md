@@ -17,7 +17,7 @@ roslaunch px4 mavros_posix_sitl.launch
 2. Run the offboard_velocity_control
 ```
 rosrun offboard_control offb_node
-rosrun offboard_corol setmode_offb
+rosrun offboard_control setmode_offb
 ```
 
 ## PID Controller
